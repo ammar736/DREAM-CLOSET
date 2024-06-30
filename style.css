@@ -1,0 +1,682 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+/*start header*/
+header{
+    background-color: aquamarine;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    margin: 15px;
+    padding: 5px;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+.mh{
+    display:flex;
+}
+.login a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #2d75e0;
+    color: rgb(8, 4, 22);
+    font-size: 22px;
+    margin:15px ;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center;
+    margin-left: 50px;
+}
+.login a:hover{
+    background-color: white;
+    color:  rgb(76, 43, 226);
+    border-radius: 20px;
+}
+.servic a{
+    text-decoration: none;
+    padding: 10px;
+    color:  rgb(76, 43, 226);
+    background-color: white;
+    font-size: 22px;
+    margin:15px ;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center;  
+}
+.servic a:hover{
+    background-color: #2d75e0;
+    color: rgb(8, 4, 22);
+    border-radius: 20px;
+}
+.shop a{
+    text-decoration: none;
+    padding: 10px;
+    color:  rgb(76, 43, 226);
+    background-color: white;
+    font-size: 22px;
+    margin:15px ;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center; 
+}
+.shop a:hover{
+    background-color: #2d75e0;
+    color: rgb(8, 4, 22);
+    border-radius: 20px;
+}
+.us a{
+    text-decoration: none;
+    padding: 10px;
+    color:  rgb(76, 43, 226);
+    background-color: white;
+    font-size: 22px;
+    margin:15px ;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center;
+}
+.us a:hover{
+    background-color: #2d75e0;
+    color: rgb(8, 4, 22);
+    border-radius: 20px;
+}
+/* end header */
+.contenrm{
+    margin: 80px;
+}
+.contenr{
+    margin: 80px;
+    margin-bottom: 550px;
+}
+@media (max-width:768px){
+    .servic a{
+        display: none;
+    }
+    .shop a{
+        display: none;
+    }
+    .us a{
+        display: none;
+    }
+    main .dis img{
+        display: none;
+    }
+    footer .upp{
+        display: none;
+    }
+    footer .mainimg{
+        display: none;
+    }
+    section .services {
+    display: block;
+    }  
+}
+@media (min-width:768px) and (max-width:991px){
+    header{
+        width: calc(50%-10px);
+    }
+  main{
+    width: calc(50%-10px);
+  }
+    .propsw{
+       
+        width: calc(50%-10px);
+    } 
+    .services{
+        width: calc(50%-10px);
+    }
+    footer{
+        width: calc(50%-10px);
+    }
+    .contenr{
+        width: calc(50%-10px);
+    }
+}
+@media (min-width:992px){
+    header{
+        width: calc(25%-5px);
+    }
+    main{
+        width: calc(25%-5px);
+    }
+    .propsw{
+      
+        width: calc(25%-5px);
+    } 
+    .services{
+        width: calc(25%-5px);
+    }
+    footer{
+        width: calc(25%-5px);
+    }
+}
+@media (min-width:1200px){ 
+}
+/*start main*/
+main{
+    margin-bottom: 0px;
+}
+main .dis{
+    display: block;
+    font-size: 29px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .dis span{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to left,blue, rgb(77, 77, 241),aqua,rgb(180, 230, 247));
+    background-clip:text;
+    display: inline;
+    color: transparent;
+    animation: animated 4s linear infinite;
+}
+@keyframes animated{
+    to{background-position-x:350px ;}
+}
+main .dis img{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    border-radius: 30%;
+}
+/* end main */
+/* start login */
+.b{
+    height: 100vh;
+   background-image: linear-gradient(to right, rgb(77, 77, 241),aqua,rgb(180, 230, 247));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.login1{
+    text-align: center;
+    justify-content: center;  
+    border-radius: 20px;
+    width: 300px;
+    height: 370px;
+    padding-top: 8px;
+     background-color: transparent; 
+    box-shadow: 10px 0 60px black;
+    font-size: 20px;
+}
+.login1 .title{
+    font-size: 30px;
+}
+.login1 .lo{
+    border: transparent;
+    border-radius: 10px;
+}
+.login1 .submit{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px ;
+}
+.login1 .submit:hover{
+    box-shadow: 2px 0 10px black;
+}
+.login1 .lo:focus{
+    box-shadow: 4px 0 10px black;
+}
+/* new account*/
+.login2{
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 470px;
+    padding-top: 8px;
+     background-color: transparent; 
+    box-shadow: 10px 0 60px black;
+    font-size: 20px;
+}
+/* end login */
+/* start section */
+/*start basket button*/
+#basket{
+    position: sticky;
+    top: 270px;
+    margin-left: 10px;
+    z-index: 1;
+    border-radius: 15px;
+    border:2px solid aqua       ;
+    background-color: white;
+    font-size: 15px;
+    transition: 1s;
+    padding: 5px;
+}
+#basket img{
+    width: 40px;
+    height: 70px;
+}
+#basket:hover {
+border:2px solid transparent;
+background-color:aqua ;
+}
+/* end basket button*/
+section{
+      width: 100%;  
+}
+section .sweater {
+background-color: aqua;
+/* margin: 60px; */
+height: 6vh;
+align-items: center;
+border: white 2px solid;
+border-radius: 20px;
+/* text-align: left; */
+}
+section .sweater .p{
+    margin-top: 11px;
+    margin-left: 25px;
+}
+section .sweater .p button{
+     margin-left: 1050px; 
+    border-radius: 20px;
+    border: transparent;
+     font-size: 16px; 
+     background-color: black;
+     color: white;
+}
+section .sweater .propsw{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+ text-align: center;
+ margin-top: 30px;
+}
+section .sweater .propsw div{
+    border: 2px solid lightblue;
+    padding: 20px;
+    border-radius: 20px; 
+}
+section .sweater .propsw div button{
+    border-radius: 20px;
+    border: transparent;
+    background-color: aqua;
+    font-size: 15px;
+    padding: 10px;
+    transition: 1s;
+}
+section .sweater .propsw div button:hover{
+    transform: rotate(0deg);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+}
+section .sweater img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 1s;
+}
+section .sweater img:hover{
+    transform: rotate(5deg);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+/* ال div المخفي*/
+.hidden{
+    display: none;
+  }
+  #b {
+    background-color: rgb(231, 81, 211);
+    height: 6vh;
+    align-items: center;
+    border: white 2px solid;
+    border-radius: 20px;
+    }
+    #b .p{
+        margin-top: 11px;
+        margin-left: 25px;
+    }
+    #b .p button{
+        margin-left: 1030px; 
+        border-radius: 20px;
+        border: transparent;
+         font-size: 16px; 
+         background-color: black;
+     color: white;
+    }
+    section #b .propsw{
+      display: flex;
+      justify-content: space-between;
+     text-align: center;
+     margin-top: 30px;
+    }
+    section  #b .propsw div{
+        border: 2px solid rgb(231, 81, 211);
+        padding: 20px;
+        border-radius: 20px; 
+    }
+    section   #b .propsw div button{
+        border-radius: 20px;
+        border: transparent;
+        background-color: rgb(231, 81, 211);
+        font-size: 15px;
+        padding: 10px;
+        transition: 1s;
+    }
+    section   #b .propsw div button:hover{
+        transform: rotate(0deg);
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+    }
+    section   #b .my-button{
+        border-radius: 20px;
+        border: 1px black solid;
+        background-color: rgb(231, 81, 211);
+        color: black;
+        margin-left: 1050px;
+        width: 50px;
+        font-size: 20px;
+    }
+    section    #b img{
+        width: 200px;
+        height: 200px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        transition: 1s;
+    }
+    section   #b img:hover{
+        transform: rotate(5deg);
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    #bb {
+        background-color: rgb(231, 81, 211);
+        height: 6vh;
+        align-items: center;
+        border: white 2px solid;
+        border-radius: 20px;
+        }
+        #bb .p{
+            margin-top: 11px;
+            margin-left: 25px;
+        }
+        #bb .p button{
+            margin-left: 1050px; 
+            border-radius: 20px;
+            border: transparent;
+             font-size: 16px; 
+             background-color: black;
+     color: white;
+        }
+        section #bb .propsw{
+          display: flex;
+          justify-content: space-between;
+         text-align: center;
+         margin-top: 30px;
+         width: 100%;
+        }
+        section  #bb .propsw div{
+            border: 2px solid rgb(231, 81, 211);
+            padding: 20px;
+            border-radius: 20px; 
+        }
+        section   #bb .propsw div button{
+            border-radius: 20px;
+            border: transparent;
+            background-color: rgb(231, 81, 211);
+            font-size: 15px;
+            padding: 10px;
+            transition: 1s;
+        }
+        section   #bb .propsw div button:hover{
+            transform: rotate(0deg);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+        }
+        section   #bb .my-button{
+            border-radius: 20px;
+            border: 1px black solid;
+            background-color: rgb(231, 81, 211);
+            color: black;
+            margin-left: 1050px;
+            width: 50px;
+            font-size: 20px;
+        }
+        section    #bb img{
+            width: 200px;
+            height: 200px;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            transition: 1s;
+        }
+        section   #bb img:hover{
+            transform: rotate(5deg);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        #bbb {
+            background-color: rgb(231, 81, 211);
+            height: 6vh;
+            align-items: center;
+            border: white 2px solid;
+            border-radius: 20px;
+            }
+            #bbb .p{
+                margin-top: 11px;
+                margin-left: 25px;
+            }
+            #bbb .p button{
+                margin-left: 1050px; 
+                border-radius: 20px;
+                border: transparent;
+                 font-size: 16px; 
+                 background-color: black;
+     color: white;
+            }
+            section #bbb .propsw{
+              display: flex;
+              justify-content: space-between;
+             text-align: center;
+             margin-top: 30px;
+            }
+            section  #bbb .propsw div{
+                border: 2px solid rgb(231, 81, 211);
+                padding: 20px;
+                border-radius: 20px; 
+            }
+            section   #bbb .propsw div button{
+                border-radius: 20px;
+                border: transparent;
+                background-color: rgb(231, 81, 211);
+                font-size: 15px;
+                padding: 10px;
+                transition: 1s;
+            }
+            section   #bbb .propsw div button:hover{
+                transform: rotate(0deg);
+                box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+            }
+            section   #bbb .my-button{
+                border-radius: 20px;
+                border: 1px black solid;
+                background-color: rgb(231, 81, 211);
+                color: black;
+                margin-left: 1050px;
+                width: 50px;
+                font-size: 20px;
+            }
+            section    #bbb img{
+                width: 200px;
+                height: 200px;
+                box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                transition: 1s;
+            }
+            section   #bbb img:hover{
+                transform: rotate(5deg);
+                box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+            }
+            #bbbb {
+                background-color: rgb(231, 81, 211);
+                height: 6vh;
+                align-items: center;
+                border: white 2px solid;
+                border-radius: 20px;
+                }
+                #bbbb .p{
+                    margin-top: 11px;
+                    margin-left: 25px;
+                }
+                #bbbb .p button{
+                    margin-left: 1050px; 
+                    border-radius: 20px;
+                    border: transparent;
+                     font-size: 16px; 
+                     background-color: black;
+     color: white;
+                }
+                section #bbbb .propsw{
+                  display: flex;
+                  justify-content: space-between;
+                 text-align: center;
+                 margin-top: 30px;
+                }
+                section  #bbbb .propsw div{
+                    border: 2px solid rgb(231, 81, 211);
+                    padding: 20px;
+                    border-radius: 20px; 
+                }
+                section   #bbbb .propsw div button{
+                    border-radius: 20px;
+                    border: transparent;
+                    background-color: rgb(231, 81, 211);
+                    font-size: 15px;
+                    padding: 10px;
+                    transition: 1s;
+                }
+                section   #bbbb .propsw div button:hover{
+                    transform: rotate(0deg);
+                    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+                }
+                section   #bbbb .my-button{
+                    border-radius: 20px;
+                    border: 1px black solid;
+                    background-color: rgb(231, 81, 211);
+                    color: black;
+                    margin-left: 1050px;
+                    width: 50px;
+                    font-size: 20px;
+                }
+                section    #bbbb img{
+                    width: 200px;
+                height: 200px;
+                    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+                    border-radius: 20px;
+                    transition: 1s;
+                }
+                section   #bbbb img:hover{
+                    transform: rotate(5deg);
+                    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+                }
+/* end section */
+/* start services */
+.services{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px;
+    margin-bottom: 220px;
+   
+}
+.services div{
+    margin: 15px;
+    text-align: center;
+}
+.services div h2{
+    font-size: 30px;
+    color: rgb(0, 17, 255);
+}
+.services div p{
+    font-size: 25px;
+}
+/* end services */
+/* start footer */
+footer{
+    background-color:aqua;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+   
+}
+footer div img{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+}
+footer .sochal img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+footer .line1{
+    width: 2px;
+    height: 255px;
+    background-color: black;
+}
+footer .upp .up img{
+    width: 50px;
+    height: 50px;
+    background-color: #e7e2ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
+/* prop start */
+ .pr{
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   justify-content: center; 
+   background-image: linear-gradient(to right, rgb(77, 77, 241),aqua,rgb(180, 230, 247)); 
+}
+.prop{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    border: transparent solid 2px;
+    border-radius: 20px;
+    width: 450px;
+    height: 570px;
+    background-color: white;
+    box-shadow: 10px 0 60px black;
+    font-size: 16px;
+}
+.prop button{
+    border-radius: 20px;
+    border: transparent;
+    background-color: aqua;
+    font-size: 15px;
+    padding: 10px;
+    transition: 1s;
+}
+.prop button:hover{
+    transform: rotate(0deg);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); 
+}
+.prop p span{
+    color: blue;
+} 
+.prop img{
+    height: 340px;
+    width:250px ;
+    margin-top: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 1s;
+}
